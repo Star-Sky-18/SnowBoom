@@ -1,0 +1,42 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="../src/index.js"></script>
+    <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+    <script type="text/javascript" src="../libraries/p5.min.js"></script>
+    <script type="text/javascript" src="../libraries/p5.sound.min.js"></script>
+    <script type="text/javascript" src="../src/snow.js"></script>
+    <script type="text/javascript" src="../src/shockWave.js"></script>
+    <script type="text/javascript" src="../src/render.js"></script>
+    <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+
+    <!-- This line removes any default padding and style.
+         You might only need one of these values set. -->
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        h2{
+            color: cornsilk;
+        }
+
+        li {
+            cursor: hand;
+            color: aliceblue;
+            list-style: none;
+            height: 7%;
+        }
+    </style>
+</head>
+
+<body>
+<ul id="music-menu" style="position: absolute;left: 0%;top: 5%;height: 50%;display: block"></ul>
+<ul id="music-context-menu" style="display: none;position: absolute">
+    <li onclick="removeMusic()">移除</li>
+    <li onclick="setTop()">置顶</li>
+</ul>
+</body>
+</html>
