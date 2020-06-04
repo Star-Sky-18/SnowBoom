@@ -2,30 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e521aa55-5bed-4798-a8ce-87e83111dac8" name="Default Changelist" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Snow Boom.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datas/Time will remember us.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datas/background_m.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datas/background_m.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datas/center.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datas/fan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datas/menuInfo.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/p5.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/p5.sound.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/render.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shockWave.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/snow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/render.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/render.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +36,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -120,38 +101,53 @@
       <workItem from="1589470593405" duration="37000" />
       <workItem from="1589470808072" duration="310000" />
       <workItem from="1589500435487" duration="1250000" />
-      <workItem from="1589506549465" duration="928000" />
+      <workItem from="1589506549465" duration="6219000" />
+      <workItem from="1589549351073" duration="93000" />
+      <workItem from="1589550673669" duration="81000" />
+      <workItem from="1589554474242" duration="267000" />
+      <workItem from="1590329204711" duration="620000" />
+      <workItem from="1591178578534" duration="1923000" />
     </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <created>1589507502155</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589507502155</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="init commit" />
     <option name="LAST_COMMIT_MESSAGE" value="init commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="258" y="0" key="CommitChangelistDialog2" timestamp="1589507485537">
+    <state x="259" y="0" key="CommitChangelistDialog2" timestamp="1591178653672">
+      <screen x="0" y="0" width="1470" height="864" />
+    </state>
+    <state x="258" y="0" key="CommitChangelistDialog2/0.0.1466.864@0.0.1466.864" timestamp="1589507500064" />
+    <state x="259" y="0" key="CommitChangelistDialog2/0.0.1470.864@0.0.1470.864" timestamp="1591178653672" />
+    <state width="1425" height="218" key="GridCell.Tab.0.bottom" timestamp="1589554750589">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state x="258" y="0" key="CommitChangelistDialog2/0.0.1466.864@0.0.1466.864" timestamp="1589507485537" />
-    <state width="1425" height="219" key="GridCell.Tab.0.bottom" timestamp="1589507485684">
+    <state width="1425" height="218" key="GridCell.Tab.0.bottom/0.0.1466.864@0.0.1466.864" timestamp="1589554750589" />
+    <state width="1425" height="218" key="GridCell.Tab.0.center" timestamp="1589554750588">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="1425" height="219" key="GridCell.Tab.0.bottom/0.0.1466.864@0.0.1466.864" timestamp="1589507485684" />
-    <state width="1425" height="219" key="GridCell.Tab.0.center" timestamp="1589507485684">
+    <state width="1425" height="218" key="GridCell.Tab.0.center/0.0.1466.864@0.0.1466.864" timestamp="1589554750588" />
+    <state width="1425" height="218" key="GridCell.Tab.0.left" timestamp="1589554750588">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="1425" height="219" key="GridCell.Tab.0.center/0.0.1466.864@0.0.1466.864" timestamp="1589507485684" />
-    <state width="1425" height="219" key="GridCell.Tab.0.left" timestamp="1589507485683">
+    <state width="1425" height="218" key="GridCell.Tab.0.left/0.0.1466.864@0.0.1466.864" timestamp="1589554750588" />
+    <state width="1425" height="218" key="GridCell.Tab.0.right" timestamp="1589554750589">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="1425" height="219" key="GridCell.Tab.0.left/0.0.1466.864@0.0.1466.864" timestamp="1589507485683" />
-    <state width="1425" height="219" key="GridCell.Tab.0.right" timestamp="1589507485684">
-      <screen x="0" y="0" width="1466" height="864" />
-    </state>
-    <state width="1425" height="219" key="GridCell.Tab.0.right/0.0.1466.864@0.0.1466.864" timestamp="1589507485684" />
+    <state width="1425" height="218" key="GridCell.Tab.0.right/0.0.1466.864@0.0.1466.864" timestamp="1589554750589" />
     <state width="1425" height="278" key="GridCell.Tab.1.bottom" timestamp="1589436151056">
       <screen x="0" y="0" width="1466" height="864" />
     </state>

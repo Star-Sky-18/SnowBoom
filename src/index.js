@@ -1,12 +1,15 @@
 const fs = require('fs')
 const {ipcRenderer} = require('electron')
 
-let musicMenu, selectedMusic, musicContextMenu;
+let musicMenu, selectedMusic, musicContextMenu,musicPlayer,musicSource;
 let menuInfo = JSON.parse(fs.readFileSync('datas/menuInfo.json'));
 
 window.onload = function () {
     musicMenu = document.getElementById('music-menu')
     musicContextMenu = document.getElementById('music-context-menu')
+    // musicPlayer = document.getElementById('music-player')
+    // musicSource = document.getElementById('music-source')
+    // musicSource.src = menuInfo[0].path
     document.addEventListener('click', e => musicContextMenu.style.display = 'none')
 }
 
@@ -95,3 +98,7 @@ function setTop(){
         }
     }
 }
+
+// function player() {
+//     console.log(this)
+// }

@@ -72,7 +72,9 @@ function draw() {
     //刷新背景
     image(img, 0, 0, 1186, 806)
 
+    //判断是否在加载
     if (isLoading) {
+        //加载动画
         push()
         let time = millis()
         translate(width / 2, height / 3)
@@ -86,7 +88,8 @@ function draw() {
             soundFile.play()
             isLoading = false
         }
-    } else if (!soundFile.isLooping() && !soundFile.isPlaying()) {
+    } else if (!soundFile.isLooping() && !soundFile.isPlaying()&&!isPaused) {
+        //没有加载且没有播放没有暂停，切换歌曲
         soundFileIndex = (soundFileIndex + 1) % menuInfo.length;
         soundFilePath = menuInfo[soundFileIndex].path
         soundFile = loadSound(soundFilePath)
@@ -95,6 +98,7 @@ function draw() {
 
     lastPow = pow
     pow = amplitude.getLevel()
+
     freqDomain = fft.analyze()
     randomWindXMax = pow * 8
     randomWindYMax = pow * 0.4
@@ -109,16 +113,24 @@ function draw() {
         windY *= 0.92
     }
 
+    //中间的环
     push()
     translate(width / 2, height / 3)
     colorMode(HSB, 255, 100, 100)
     let detAngle = radians(360 / 255)
+    beginShape()
+    // noFill()
     for (let i = 0; i < 255; i++) {
-        fill((i+70)%255, 45, 70)
-        let p = Math.pow(freqDomain[i], 0.8) * 3 + 2
+        fill((i+70)%255, 40, 70,pow*2)
+        let p = Math.pow(freqDomain[i], 0.6) * 6 + 2
         rect(0, fftRadius, TWO_PI * fftRadius / 255, p)
+        // arc(0,0,p+fftRadius,p+fftRadius,0,TWO_PI/255)
+        // vertex(cos(i*TWO_PI/255)*(p+fftRadius),sin(i*TWO_PI/255)*(p+fftRadius))
+        // vertex(cos((i+1)*TWO_PI/255)*(p+fftRadius),sin((i+1)*TWO_PI/255)*(p+fftRadius))
         rotate(detAngle)
     }
+    endShape(CLOSE)
+    //中间的图
     if(!isLoading) {
         rotate(radians(frameCount * 5))
         image(centerImg, -fftRadius, -fftRadius, fftRadius * 2, fftRadius * 2)
@@ -126,10 +138,12 @@ function draw() {
     pop()
 
     let power = pow / lastPow
+    //冲击波效果
     if (power > 1.7&&waves.length<2) {
         waves.push(new ShockWave(width / 2, height / 3, power * 10))
     }
 
+    //鼠标那个小风扇
     let mouseSpeed = sqrt(windX * windX + windY * windY)
     let mouseRadius = map(mouseSpeed, 0, 10, 30, 100)
     push()
@@ -141,7 +155,7 @@ function draw() {
     image(mouse, -mouseRadius / 2, -mouseRadius / 2, mouseRadius, mouseRadius)
     pop();
 
-    //
+    //雪花
     if (frameCount % 2 === 0 && snows.length < maxSnowCount && random(1) < 0.4) {
         snows.push(new Snow())
     }
@@ -157,6 +171,7 @@ function draw() {
         snows[i].redraw()
     }
 
+    //绘制所有冲击波
     for (let i in waves) {
         if(waves[i].redraw())
             waves.splice(i,1)
